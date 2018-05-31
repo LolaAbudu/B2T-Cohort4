@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<input placeholder="First Name" type="text" id="fname"><br>
+		<input placeholder="Last Name" type="text" id="lname"><br>
+		<input type="button" value="Submit" onclick="getFormValue()">
+		<p id="display"></p>
+
+		<script>
+			function getFormValue(){
+				var fname = document.getElementById('fname').value;
+				var lname = document.getElementById('lname').value;
+				var display = document.getElementById('display').innerHTML = fname +' '+ lname;
+			}
+		</script>
+	</body>
+</html>
+
